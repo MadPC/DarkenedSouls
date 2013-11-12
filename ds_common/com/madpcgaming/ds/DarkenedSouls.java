@@ -1,4 +1,4 @@
-package com.madpcgaming.ds;
+	package com.madpcgaming.ds;
 
 import net.minecraft.creativetab.CreativeTabs;
 
