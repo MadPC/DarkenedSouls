@@ -17,13 +17,25 @@ public class Elements
 	int												blend;
 
 	public static LinkedHashMap<String, Elements>	elements	= new LinkedHashMap();
+	
+	/**
+	 * How to add more Elements:
+	 * 1. public static final Elements NAME in all caps.
+	 * 2. Name of element, color, chat color, image
+	 * Chat color must be in quotes or it will not work
+	 * @author Daniel
+	 */
 
-	public static final Elements AIR = new Elements("Air",16777086, "e", 1);
-	public static final Elements EARTH = new Elements("Earth",5685248, "2", 1);
-	public static final Elements FIRE = new Elements("Fire",16734721, "c", 1);
+	public static final Elements AIR = new Elements("Air", 16777086, "e", 1);
+	public static final Elements EARTH = new Elements("Earth", 5685248, "2", 1);
+	public static final Elements FIRE = new Elements("Fire", 16734721, "c", 1);
 	public static final Elements WATER = new Elements("Water",3986684, "3", 1);
-	public static final Elements LIGHT = new Elements("Light", 14013676, "7", 1);
-	public static final Elements SHADOW = new Elements("Shadow", 4210752, "8", 1);
+	public static final Elements LIGHT = new Elements("Light",  16774755, "7", 1);
+	public static final Elements DEATH = new Elements("Death", 8943496, "8", 1);
+	public static final Elements LIFE = new Elements("Life", 14548997, "1", 1);
+	public static final Elements DARK = new Elements("Dark", 2236962, "1", 1);	
+	public static final Elements GOOD = new Elements("Good", 14013676, "1", 1);
+	public static final Elements EVIL = new Elements("Evil", 8388736, "1", 1);
 
 	public Elements(String tag, int color, Elements[] components,
 			ResourceLocation image, int blend)
