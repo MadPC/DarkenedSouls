@@ -12,6 +12,20 @@ import net.minecraftforge.common.Configuration;
 public class ConfigurationHandler
 {
 	public static Configuration configuration;
+	public static final String CATEGORY_BLOCK = "Blocks";
+	public static final String CATERGORY_ITEM = "Items";
+	
+	//Mobs Spawn
+	public static boolean spawnReaperz = true;
+	public static boolean spawnAngel = true;
+	public static boolean spawnGolems = true;
+	//Boss Spawns
+	public static boolean spawnBrann = true;
+	public static boolean spawnLuft = true;
+	public static boolean spawnJorden = true;
+	public static boolean spawnVann = true;
+	public static boolean spawnGrim = true;
+	public static boolean spawnMico = true;
 	
 	public static void init (File configFile)
 	{
