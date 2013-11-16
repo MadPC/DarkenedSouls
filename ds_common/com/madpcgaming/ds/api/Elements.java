@@ -2,10 +2,10 @@ package com.madpcgaming.ds.api;
 
 import java.util.LinkedHashMap;
 
+import org.apache.commons.lang3.text.WordUtils;
+
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.StatCollector;
-
-import org.apache.commons.lang3.text.WordUtils;
 
 public class Elements
 {
