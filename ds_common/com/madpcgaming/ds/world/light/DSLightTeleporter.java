@@ -1,4 +1,4 @@
-package com.madpcgaming.ds.world;
+package com.madpcgaming.ds.world.light;
 
 import java.util.Random;
 
@@ -11,15 +11,16 @@ import net.minecraft.world.World;
 import net.minecraft.world.WorldServer;
 
 import com.madpcgaming.ds.blocks.ModBlocks;
+import com.madpcgaming.ds.world.DSWorld;
 
 import cpw.mods.fml.common.FMLLog;
 
-public class DSDarkTeleporter extends Teleporter
+public class DSLightTeleporter extends Teleporter
 {
 	protected WorldServer myWorld;
 	protected Random rand;
 
-	public DSDarkTeleporter(WorldServer worldServer)
+	public DSLightTeleporter(WorldServer worldServer)
 	{
 		super(worldServer);
 		this.myWorld = worldServer;
@@ -103,7 +104,7 @@ public class DSDarkTeleporter extends Teleporter
 	
 	public boolean isBlockPortal(World world, int x, int y, int z)
 	{
-		return world.getBlockId(x, y, z) == ModBlocks.ShadowPortal.blockID;
+		return world.getBlockId(x, y, z) == ModBlocks.BrightPortal.blockID;
 	}
 	
 	public boolean makePortal(Entity entity)
@@ -235,23 +236,23 @@ public class DSDarkTeleporter extends Teleporter
 		}
 		py--;
 		
-		world.setBlock(px - 1, py + 0, pz - 1, ModBlocks.ShadowStone.blockID, 0, 2);
-		world.setBlock(px + 0, py + 0, pz - 1, ModBlocks.ShadowStone.blockID, 0, 2);
-		world.setBlock(px + 1, py + 0, pz - 1, ModBlocks.ShadowStone.blockID, 0, 2);
+		world.setBlock(px - 1, py + 0, pz - 1, ModBlocks.BrightStone.blockID, 0, 2);
+		world.setBlock(px + 0, py + 0, pz - 1, ModBlocks.BrightStone.blockID, 0, 2);
+		world.setBlock(px + 1, py + 0, pz - 1, ModBlocks.BrightStone.blockID, 0, 2);
 		
-		world.setBlock(px - 1, py + 1, pz - 1, ModBlocks.ShadowStone.blockID, 0, 2);
-		world.setBlock(px + 1, py + 1, pz - 1, ModBlocks.ShadowStone.blockID, 0, 2);
+		world.setBlock(px - 1, py + 1, pz - 1, ModBlocks.BrightStone.blockID, 0, 2);
+		world.setBlock(px + 1, py + 1, pz - 1, ModBlocks.BrightStone.blockID, 0, 2);
 		
-		world.setBlock(px - 1, py + 2, pz - 1, ModBlocks.ShadowStone.blockID, 0, 2);
-		world.setBlock(px + 1, py + 2, pz - 1, ModBlocks.ShadowStone.blockID, 0, 2);
+		world.setBlock(px - 1, py + 2, pz - 1, ModBlocks.BrightStone.blockID, 0, 2);
+		world.setBlock(px + 1, py + 2, pz - 1, ModBlocks.BrightStone.blockID, 0, 2);
 		
-		world.setBlock(px - 1, py + 3, pz - 1, ModBlocks.ShadowStone.blockID, 0, 2);
-		world.setBlock(px + 0, py + 3, pz - 1, ModBlocks.ShadowStone.blockID, 0, 2);
-		world.setBlock(px + 1, py + 3, pz - 1, ModBlocks.ShadowStone.blockID, 0, 2);
+		world.setBlock(px - 1, py + 3, pz - 1, ModBlocks.BrightStone.blockID, 0, 2);
+		world.setBlock(px + 0, py + 3, pz - 1, ModBlocks.BrightStone.blockID, 0, 2);
+		world.setBlock(px + 1, py + 3, pz - 1, ModBlocks.BrightStone.blockID, 0, 2);
 		
-		world.setBlock(px + 0, py + 1, pz - 1, ModBlocks.ShadowPortal.blockID, 0, 2);
+		world.setBlock(px + 0, py + 1, pz - 1, ModBlocks.BrightPortal.blockID, 0, 2);
 		
-		world.setBlock(px + 0, py + 3, pz - 1, ModBlocks.ShadowPortal.blockID, 0, 2);
+		world.setBlock(px + 0, py + 3, pz - 1, ModBlocks.BrightPortal.blockID, 0, 2);
 		
 		for(int dx = -1; dx <= 2; dx++)
 		{

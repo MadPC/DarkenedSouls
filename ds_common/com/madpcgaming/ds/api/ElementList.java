@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 
 public class ElementList implements Serializable
 {
-	public LinkedHashMap<Elements, Integer> elements = new LinkedHashMap();
+	public LinkedHashMap<Elements, Integer> elements = new LinkedHashMap<Elements, Integer>();
 	
 	public ElementList(int id, int meta)
 	{

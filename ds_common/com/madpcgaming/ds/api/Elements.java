@@ -16,7 +16,7 @@ public class Elements
 	ResourceLocation								image;
 	int												blend;
 
-	public static LinkedHashMap<String, Elements>	elements	= new LinkedHashMap();
+	public static LinkedHashMap<String, Elements>	elements	= new LinkedHashMap<String, Elements>();
 	
 	/**
 	 * How to add more Elements:

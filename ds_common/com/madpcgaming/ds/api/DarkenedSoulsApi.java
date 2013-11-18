@@ -6,7 +6,7 @@ import net.minecraft.nbt.NBTBase;
 
 public class DarkenedSoulsApi
 {
-	public static ArrayList<EntityTags> scanEntities = new ArrayList();
+	public static ArrayList<EntityTags> scanEntities = new ArrayList<EntityTags>();
 	public static void registerEntityTag(String entityName, ElementList elements, NBTBase[] nbt)
 	{
 		scanEntities.add(new EntityTags(entityName, nbt, elements));

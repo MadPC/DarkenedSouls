@@ -38,7 +38,7 @@ public class DarkenedSoulsApiHelper
 		ElementList ot = null;
 		try{
 			if(getObjectTags == null){
-				Class fake = Class.forName("ds_common.com.madpcgaming.ds.lib.DarkenedSoulsCraftingManager");
+				Class<?> fake = Class.forName("ds_common.com.madpcgaming.ds.lib.DarkenedSoulsCraftingManager");
 				getObjectTags = fake.getMethod("getObjectTags", new Class[] { ItemStack.class});
 			}
 			ot = (ElementList)getObjectTags.invoke(null, new Object[] {is});
