@@ -9,7 +9,8 @@ public class BlockDS extends Block
 	public BlockDS(int id, Material par2Material)
 	{
 		super(id, par2Material);
-		// TODO Auto-generated constructor stub
 	}
+	
+	
 
 }
