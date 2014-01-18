@@ -38,16 +38,16 @@ public class ConfigurationHandler
 
 			/* Block ID Configuration */
 			BlockIds.SHADOW_STONE = configuration.getBlock(
-					Strings.SHADOW_STONE_NAME, BlockIds.SHADOW_STONE).getInt(
+					Strings.SHADOW_STONE_NAME, BlockIds.SHADOW_STONE_DEFAULT).getInt(
 					BlockIds.SHADOW_STONE_DEFAULT);
 			BlockIds.SHADOW_PORTAL = configuration.getBlock(
-					Strings.SHADOW_PORTAL_NAME, BlockIds.SHADOW_PORTAL).getInt(
+					Strings.SHADOW_PORTAL_NAME, BlockIds.SHADOW_PORTAL_DEFAULT).getInt(
 					BlockIds.SHADOW_STONE_DEFAULT);
 			BlockIds.BRIGHT_STONE = configuration.getBlock(
-					Strings.BRIGHT_STONE_NAME, BlockIds.BRIGHT_STONE).getInt(
+					Strings.BRIGHT_STONE_NAME, BlockIds.BRIGHT_STONE_DEFAULT).getInt(
 					BlockIds.BRIGHT_STONE_DEFAULT);
 			BlockIds.BRIGHT_PORTAL = configuration.getBlock(
-					Strings.BRIGHT_PORTAL_NAME, BlockIds.BRIGHT_PORTAL).getInt(
+					Strings.BRIGHT_PORTAL_NAME, BlockIds.BRIGHT_PORTAL_DEFAULT).getInt(
 					BlockIds.BRIGHT_PORTAL_DEFAULT);
 
 			/* Item ID Configuration */
