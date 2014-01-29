@@ -1,0 +1,5 @@
+tile.stoneShadow.name=Shadow Stone
+tile.portalShadow.name=Shadow Portal
+tile.stoneBright.name=Bright Stone
+tile.portalBright.name=Bright Portal
+itemGroup.ds=Darkened Souls

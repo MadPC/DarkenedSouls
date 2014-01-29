@@ -1,0 +1,11 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+/.classpath
+/.project
+/.gradle/
+/bin/
+!gradle-wrapper.jar
