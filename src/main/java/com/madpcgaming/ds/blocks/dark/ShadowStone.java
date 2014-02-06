@@ -11,9 +11,9 @@ public class ShadowStone extends BlockDS
 
 	public ShadowStone(int id)
 	{
-		super(id, Material.field_151576_e);
-		this.func_149663_c(Strings.SHADOW_STONE_NAME);
-		this.func_149647_a(DarkenedSouls.tabsDS);
+		super(id, Material.rock);
+		this.setBlockName(Strings.SHADOW_STONE_NAME);
+		this.setCreativeTab(DarkenedSouls.tabsDS);
 	}
 
 }

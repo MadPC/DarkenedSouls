@@ -16,9 +16,9 @@ public class ShadowPortal extends BlockDS
 
 	public ShadowPortal(int id)
 	{
-		super(id, Material.field_151567_E);
-		this.func_149647_a(DarkenedSouls.tabsDS);
-		this.func_149663_c(Strings.SHADOW_PORTAL_NAME);
+		super(id, Material.portal);
+		this.setCreativeTab(DarkenedSouls.tabsDS);
+		this.setBlockName(Strings.SHADOW_PORTAL_NAME);
 	}
 
 	public void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity)

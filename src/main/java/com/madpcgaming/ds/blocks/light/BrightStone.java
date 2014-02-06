@@ -11,9 +11,9 @@ public class BrightStone extends BlockDS
 
 	public BrightStone(int id)
 	{
-		super(id, Material.field_151576_e);
-		this.func_149647_a(DarkenedSouls.tabsDS);
-		this.func_149663_c(Strings.BRIGHT_STONE_NAME);
+		super(id, Material.rock);
+		this.setCreativeTab(DarkenedSouls.tabsDS);
+		this.setBlockName(Strings.BRIGHT_STONE_NAME);
 	}
 
 }
