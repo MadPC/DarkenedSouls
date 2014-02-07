@@ -21,6 +21,7 @@ public class ShadowPortal extends BlockDS
 		this.setBlockName(Strings.SHADOW_PORTAL_NAME);
 	}
 
+	@SuppressWarnings("unused")
 	public void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity)
 	{
 		if((entity.ridingEntity == null) && (entity.riddenByEntity == null)  && ((entity instanceof EntityPlayerMP)))
