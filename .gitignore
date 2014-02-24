@@ -9,3 +9,16 @@
 /.gradle/
 /bin/
 !gradle-wrapper.jar
+
+
+# General excludes #
+*.txt
+!/src/*.txt
+
+# IntelliJ Idea Files #
+*.ipr
+*.iml
+*.iws
+/eclipse/
+/out/
+/build/
