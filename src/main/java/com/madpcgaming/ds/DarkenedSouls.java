@@ -15,6 +15,7 @@ import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.network.NetworkRegistry;
+import net.minecraftforge.common.MinecraftForge;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class DarkenedSouls
@@ -36,6 +37,8 @@ public class DarkenedSouls
 	{
 
 		NetworkRegistry.INSTANCE.registerGuiHandler(this, DarkenedSouls.proxy);
+
+		MinecraftForge.EVENT_BUS.register(new com.madpcgaming.ds.core.EventHandler());
 
 		instance = this;
 		ModBlocks.init();
